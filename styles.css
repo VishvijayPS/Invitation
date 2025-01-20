@@ -79,12 +79,8 @@ main .cal , .loc{
   margin: 5px 0;
 }
 
-.event-details .period{
-    margin-left: 40%;
-}
-
 .event-details .period p{
-  text-align: left;
+  text-align: center;
 }
 
 .invitation h2 {
@@ -240,9 +236,6 @@ footer p {
 
 /* Large devices (desktops, more than 768px) */
 @media only screen and (min-width: 768px) {
-  .event-details .period {
-    margin-left: 30%;
-  }
 
   .organizers .stf {
     justify-content: space-around;
