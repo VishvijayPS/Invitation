@@ -29,7 +29,7 @@ header .logo2 {
     width: 100px;
     height: 100px; 
 }
-header .logo3,.logo4,.logo1{
+header .logo3,header .logo4,header .logo1{
     width: 250px;
     height: 100px; 
 }
@@ -137,14 +137,28 @@ footer p {
   }
 
   header .imgs {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 
-  header .logo1, header .logo2, header .logo3, header .logo4 {
-    width: 150px;
-    height: auto;
-    margin-bottom: 10px;
+  .imgs .logo2{
+    width: 25px;
+    height: 25px;
+  }
+
+  .imgs .logo1{
+    width: 125px;
+    height: 25px; 
+    margin-right: 5px;
+  }
+  .imgs .logo3{
+    width: 125px;
+    height: 25px; 
+  }
+  .imgs .logo4{
+    width: 125px;
+    height: 25px; 
   }
 
   header h1 {
@@ -188,11 +202,23 @@ footer p {
     justify-content: center;
   }
 
-  header .logo1, header .logo2, header .logo3, header .logo4 {
-    width: 200px;
-    height: auto;
+  .imgs .logo2{
+    width: 50px;
+    height: 50px;
   }
 
+  .imgs .logo1{
+    width: 150px;
+    height: 50px; 
+  }
+  .imgs .logo3{
+    width: 150px;
+    height: 50px; 
+  }
+  .imgs .logo4{
+    width: 150px;
+    height: 50px; 
+  }
   .event-details .period {
     margin-left: 10%;
   }
