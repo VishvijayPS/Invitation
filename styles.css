@@ -1,0 +1,228 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imgs{
+    display: flex;
+    justify-content: space-around;
+}
+
+header .logo2 {
+    width: 100px;
+    height: 100px; 
+}
+header .logo3,.logo4,.logo1{
+    width: 250px;
+    height: 100px; 
+}
+header h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+header h2 {
+  font-size: 1.5em;
+  color: #555;
+}
+
+header h3 {
+  font-size: 1.2em;
+  color: #777;
+}
+
+/* Main Content Styles */
+main {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main .cal , .loc{
+  width: 25px;
+  height: auto;
+}
+
+.event-details h1 {
+  font-size: 1.8em;
+  color: #4caf50;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.event-details h2 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.event-details p{
+  text-align: center;
+  margin: 5px 0;
+}
+
+.event-details .period{
+    margin-left: 40%;
+}
+
+.event-details .period p{
+  text-align: left;
+}
+
+.invitation h2 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #ffcc00;
+  margin: 20px 0;
+}
+
+.organizers{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.organizers i{
+  color: rgb(76, 218, 118);
+}
+
+.organizers .stf{
+  width: 70%;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+.st{
+  text-align: center;
+  padding: 10px;
+}
+
+.st p{
+   color: rgb(28, 57, 120);
+}
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #4caf50;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header .imgs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .logo1, header .logo2, header .logo3, header .logo4 {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header h2 {
+    font-size: 1.2em;
+  }
+
+  header h3 {
+    font-size: 1em;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .event-details .period {
+    margin-left: 0;
+  }
+
+  .event-details .period p {
+    text-align: center;
+  }
+
+  .organizers .stf {
+    flex-direction: column;
+  }
+
+  .organizers .st {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  header .imgs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header .logo1, header .logo2, header .logo3, header .logo4 {
+    width: 200px;
+    height: auto;
+  }
+
+  .event-details .period {
+    margin-left: 10%;
+  }
+
+  .event-details .period p {
+    text-align: left;
+  }
+
+  .organizers .stf {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .organizers .st {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Large devices (desktops, more than 768px) */
+@media only screen and (min-width: 768px) {
+  .event-details .period {
+    margin-left: 30%;
+  }
+
+  .organizers .stf {
+    justify-content: space-around;
+  }
+
+  .organizers .st {
+    width: 30%;
+  }
+}
