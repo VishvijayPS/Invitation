@@ -26,8 +26,8 @@ header {
 }
 
 header .logo2 {
-    width: 150px;
-    height: 150px; 
+    width: 100px;
+    height: 100px; 
 }
 header .logo3,header .logo4,header .logo1{
     width: 250px;
